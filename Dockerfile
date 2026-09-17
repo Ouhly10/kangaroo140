@@ -21,7 +21,7 @@ WORKDIR /build/kangaroo
 # (not CCAP) — override all three on the command line so it builds against
 # the CUDA toolkit actually present in this image, with the ccap for
 # Ada Lovelace (RTX 4070 Ti Super / 4090 / 4080 etc.)
-RUN make gpu=1 ccap=89 CUDA=/usr/local/cuda CXXCUDA=/usr/bin/g++ all
+RUN make gpu=1 ccap=86 CUDA=/usr/local/cuda CXXCUDA=/usr/bin/g++ all
 
 # ---- runtime image ----
 FROM nvidia/cuda:12.4.1-runtime-ubuntu22.04
